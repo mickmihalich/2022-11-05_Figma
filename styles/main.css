@@ -25,7 +25,7 @@ header {
     min-width: 1100px;
     height: 513px;
     background-color: #296DCE;
-    background-image: url('../images/Group 31.png');
+    background-image: url(../images/Group\ 31.png);
     background-repeat: no-repeat;
     background-position: center center;
 
@@ -90,7 +90,33 @@ header {
     /*background-color: rgba(128, 128, 128, 0.3);*/
     margin-left: 8px;
     margin-top: 34px;
-    background-image: url(../images/karpachoff.png);
+    background-image: url(../images/бандера.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
 }
 
+.group {
+    margin-top: 14px;
+    display: flex;
+    color: #979FAD;
+    width: 1100px;
 
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    line-height: 19px;    
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.tire {
+    width: 22px;
+    height: 0px;
+    margin: 14px;
+    border: 1px solid #979FAD;
+}
