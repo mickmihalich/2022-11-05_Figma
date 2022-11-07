@@ -147,7 +147,7 @@ header {
     color: #222B3A;
     font-weight: 700; /* bold */
 
-    margin-top: 3px; /* correction position of block*/
+    margin-top: 9px; /* correction position of block*/
 }
 .children_age {
     box-sizing: border-box;
@@ -161,4 +161,11 @@ header {
 
     display: flex;
     align-items: center; /*center of verticaL */
+    justify-content: space-between; /*розтягнути по краям */
+
+    font-size: 14px;
+    font-weight: 700; /* bold */
+    line-height: 27px;
+    
+    padding: 0 20px;    
 }
