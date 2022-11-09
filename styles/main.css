@@ -96,6 +96,7 @@ a {
 
     /* залишити (72 - 2 = 70) 2px для бордера в hover */
     height: 70px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.03);
 }
 .menu_item:last-child {
     margin-right: -20px;
@@ -295,13 +296,18 @@ a {
 .items {
     margin: 19px 0;
     min-width: 100%;
-    min-height: 5em;
+    height: 203px;
     
     border: 1px solid #F3F3F3;
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.03);
     border-radius: 3px;
+
+    display: flex;
+    flex-direction: row;
+
+    font-family: 'Proxima Nova';
 }
-.items_number {
+.item_number {
     width: 148px;
     height: 104px;
     
@@ -316,6 +322,60 @@ a {
     justify-content: center;
 
     color: #E1E1E1;
+}
+.item_center {
+    display: flex;
+    flex-direction: column;
+}
+.item_title {
+    font-family: 'Proxima Nova';
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    color: #1092CB;
+    /* Extra Bold = 800 */
+    font-weight: 800;
+
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+.item_baby_age {    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    /*display: flex;
+    align-items: center;*/
+
+    color: #979FAD;
+}
+.item_text {
+    width: 799px;
+    font-size: 16px;
+    line-height: 27px;
+
+    margin-top: 14px;
+
+    color: #696969;
+}
+.available {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    /* identical to box height */
+
+    color: #696969;
+    margin-top: 5px;
+}
+.item_date {
+    color: #FE8907;
 }
 
 
