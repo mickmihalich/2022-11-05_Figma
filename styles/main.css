@@ -294,7 +294,7 @@ a {
     flex-direction: column;    
 }
 .items {
-    margin: 19px 0;
+    margin-bottom: 19px;
     min-width: 100%;
     height: 203px;
     
@@ -306,6 +306,12 @@ a {
     flex-direction: row;
 
     font-family: 'Proxima Nova';
+}
+.items:first-child {
+    margin-top: 26px;
+}
+.items:last-child {
+    margin-bottom: 76px;
 }
 .item_number {
     width: 148px;
@@ -377,7 +383,10 @@ a {
 .item_date {
     color: #FE8907;
 }
-
+.item_percent {
+    margin-top: 30px;
+    margin-left: 95px;
+}
 
 /* Бомбосховище */
 
