@@ -1,45 +1,155 @@
 @import url('https://fonts.cdnfonts.com/css/intro');/* з https://www.cdnfonts.com/intro.font */
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
 
-body {
+.zovnishna_obolonka, hero_wrapper {
+    /* for center of colum */
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
-    min-width: 1100px;
-}
-header {
-    height: 72px;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 1100px;
-}
-.head_logo1_1 {
-    display: block;
-    /*padding-left: 244px;*/
-}
-.logo_block_all_with {
+    
+    /*colors for test*/
+    /*border: 1px solid blue;
+    background-color: rgb(125, 125, 255);*/
+
+    min-width: 1202px;
     width: 100vw;
+    /* щоб навіть з межами 1px вміщувалося в вікно: */
+    box-sizing: border-box;
+
+    /* внутрішні блоки в стобчик */
+    flex-direction: column;
+}
+
+.obolonka {    
+    /* відступи з боків щоб залишалися */
+    /* for free min-widtn 1200 */
     min-width: 1200px;
-    height: 513px;
-    background-color: #296DCE;
-    background-image: url(../images/Group\ 31.png);
-    background-repeat: no-repeat;
-    background-position: center center;
+ 
 
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    /*colors for test*/
+    /*border: 1px solid lime;
+    background-color: rgba(126, 250, 126, 0.5);*/
+
+    
 }
-.logo_block_colum {
-    width: 1100px;
+
+.prostir {
+    /* for min-widtn 1100 */
+    min-width: 1100px;
+    display: flex;
+    align-items: center;
+    
+
+    /*colors for test*/
+    /*border: 1px solid red;
+    background-color:rgba(255, 130, 130, 0.541);*/
+}
+
+.header {
+    display: flex;
+    /* Розігнати по сторонам до межі */
+    justify-content: space-between;
+    align-items: center;/* без нього розтягує по висоті */
+    background-color: #ffffff;
+    min-width: 1100px;
+    height: 72px;
+
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    line-height: 19.49px;
+    font-weight: 700;/* Bold */
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+
+    /*colors for test*/
+    /*border: 1px solid rgb(147, 226, 43);*/
+    /*background-color: blueviolet;*/
+    
+    height: 100%;
+}
+.menu_item {    
+    /*colors for test*/
+    /*border: 1px solid magenta;*/
+    
+    display: flex;
+    align-items: center;
+
+    margin-right: 35px;
+    padding: 0 2px;
+    
+    /* font - color for a */
+    color: #222B3A;
+
+    /*box-sizing: border-box;*/
+
+    /* залишити (72 - 2 = 70) 2px для бордера в hover */
+    height: 70px;
+}
+.menu_item:last-child {
+    margin-right: -20px;
+}
+.menu_item>img {
+    margin-right: 6px;
+}
+.user {    
+    /*colors for test*/
+    /*border: 1px solid magenta;*/
+
+    display: flex;
+    align-items: center;
+    
+    margin-right: 6px;
+    margin-left: 33px;
+
+    height: 68px;
+}
+.menu_item:hover {
+    border-bottom: 2px solid #FC890D;
+    /*height: calc(100% - 1px)*/
+}
+
+
+/*-= WELCOME INTRO HERO =-*/
+.hero_wrapper {    
     height: 513px;
+}
+
+.hero_wrapper .obolonka {
+    background-color: #296DCE;
+    background-image: url(../images/triangles.png);
+    background-position: center center;
+    background-repeat:no-repeat;    
+}
+
+
+.hero {    
+    height: 513px;
+    min-width: 1100px;
+
+    
+    /*colors for test*/
+    /*border: 1px solid rgb(234, 0, 255);
+    background-color: rgba(197, 137, 253, 0.566);*/
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
-.main_welcome_text {
+
+
+.intro {
     font-family: 'Intro Demo', sans-serif;
     margin-top: 66px;
     width: 622px;
@@ -48,20 +158,21 @@ header {
     flex-direction: column;
     justify-content: space-between;
 }
-.main_welcome_text_acad {
+.intro_name {
     font-size: 38px;
     color: #FFFFFF;
     line-height: 53px;
     margin-top: 38px;
 }
-.main_welcome_text_name {
+.intro_text {
     font-size: 24px;
+
     /* Градієнт */
     background: linear-gradient(89.96deg, #FF8A00 0.03%, #FC880D 99.97%), #000000;
     line-height: 31px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
+    /*background-clip: text;*/
     /*text-fill-color: transparent;*/
 }
 .more_of_course {
@@ -80,6 +191,11 @@ header {
     text-align: center;
     box-sizing: border-box;
 }
+.more_of_course:hover {
+    color:#FF8A00;
+    border-color: #FF8A00;
+}
+
 .main_progress {
     margin-top: 72px;
     width: 469px;
@@ -166,6 +282,62 @@ header {
     font-size: 14px;
     font-weight: 700; /* bold */
     line-height: 27px;
+     
+    padding: 0 20px 0 30px;    
+}
+
+.back_for_select_gruop_menu {
+    background: #FAFAFA;
+}
+.prostir.item {
+    flex-direction: column;    
+}
+.items {
+    margin: 19px 0;
+    min-width: 100%;
+    min-height: 5em;
     
-    padding: 0 20px;    
+    border: 1px solid #F3F3F3;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.03);
+    border-radius: 3px;
+}
+.items_number {
+    width: 148px;
+    height: 104px;
+    
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #E1E1E1;
+}
+
+
+/* Бомбосховище */
+
+.zovnishna_obolonka.shelter {
+    background-color: #0099DD;
+    height: 350px;    
+
+}
+
+.basement {
+    width: 1100px;
+    display: flex;
+    flex-direction: row;    
+}
+
+.zovnishna_obolonka.soil {
+    background-color: #222B3A;
+    height: 47px;    
+}
+
+.foundation {
+
 }
