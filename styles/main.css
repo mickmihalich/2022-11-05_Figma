@@ -119,6 +119,7 @@ a {
 .menu_item:hover {
     border-bottom: 2px solid #FC890D;
     /*height: calc(100% - 1px)*/
+    color: #FC890D;
 }
 
 
@@ -410,3 +411,25 @@ a {
 .foundation {
 
 }
+
+
+/* Custom scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #E1E1E1;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #696969; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FE8907; 
+  }
