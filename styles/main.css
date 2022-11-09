@@ -1,7 +1,8 @@
 @import url('https://fonts.cdnfonts.com/css/intro');/* з https://www.cdnfonts.com/intro.font */
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
 
-.zovnishna_obolonka, hero_wrapper {
+
+.zovnishna_obolonka {
     /* for center of colum */
     display: flex;
     justify-content: center;
@@ -124,15 +125,12 @@ a {
 
 
 /*-= WELCOME INTRO HERO =-*/
-.hero_wrapper {    
-    height: 513px;
-}
-
-.hero_wrapper .obolonka {
+.zovnishna_obolonka.hero_wrapper {
     background-color: #296DCE;
     background-image: url(../images/triangles.png);
     background-position: center center;
     background-repeat:no-repeat;    
+    height: 513px;
 }
 
 
@@ -390,18 +388,23 @@ a {
 }
 
 /* Бомбосховище */
-
 .zovnishna_obolonka.shelter {
     background-color: #0099DD;
     height: 350px;    
 
 }
-
 .basement {
     width: 1100px;
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;   
+    justify-content: space-between 
 }
+.basement_block {
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 .zovnishna_obolonka.soil {
     background-color: #222B3A;
@@ -416,13 +419,15 @@ a {
 /* Custom scrollbar */
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 0.7rem;
+    height: 0.7rem;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
     background: #E1E1E1;
   }
+  
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
