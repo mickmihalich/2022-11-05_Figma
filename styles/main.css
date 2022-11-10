@@ -80,6 +80,7 @@ a {
     
     height: 100%;
 }
+
 .menu_item {    
     /*colors for test*/
     /*border: 1px solid magenta;*/
@@ -99,12 +100,15 @@ a {
     height: 70px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.03);
 }
+
 .menu_item:last-child {
     margin-right: -20px;
 }
+
 .menu_item>img {
     margin-right: 6px;
 }
+
 .user {    
     /*colors for test*/
     /*border: 1px solid magenta;*/
@@ -117,6 +121,7 @@ a {
 
     height: 68px;
 }
+
 .menu_item:hover {
     border-bottom: 2px solid #FC890D;
     /*height: calc(100% - 1px)*/
@@ -129,10 +134,9 @@ a {
     background-color: #296DCE;
     background-image: url(../images/triangles.png);
     background-position: center center;
-    background-repeat:no-repeat;    
+    background-repeat:no-repeat;
     height: 513px;
 }
-
 
 .hero {    
     height: 513px;
@@ -148,7 +152,6 @@ a {
     flex-wrap: wrap;
 }
 
-
 .intro {
     font-family: 'Intro Demo', sans-serif;
     margin-top: 66px;
@@ -158,12 +161,14 @@ a {
     flex-direction: column;
     justify-content: space-between;
 }
+
 .intro_name {
     font-size: 38px;
     color: #FFFFFF;
     line-height: 53px;
     margin-top: 38px;
 }
+
 .intro_text {
     font-size: 24px;
 
@@ -175,6 +180,7 @@ a {
     /*background-clip: text;*/
     /*text-fill-color: transparent;*/
 }
+
 .more_of_course {
     margin-top: 29px;
     height: 44px;
@@ -191,6 +197,7 @@ a {
     text-align: center;
     box-sizing: border-box;
 }
+
 .more_of_course:hover {
     color:#FF8A00;
     border-color: #FF8A00;
@@ -201,6 +208,7 @@ a {
     width: 469px;
     height: 59px;
 }
+
 .karpachoff {
     width: 339px;
     height: 479px;
@@ -231,67 +239,80 @@ a {
     align-content: center;
 }
 
+.line a:hover, .selected_group_line:hover {
+    color: #FF8A00;
+}
+
+.line a {
+    color: #979FAD;
+}
+
+
 .tire {
     width: 22px;
     height: 0px;
     margin: 14px;
     border-bottom: 1px solid #979FAD;
 }
+
 .tire1 {
     width: 22px;
     height: 0px;
     margin: 14px;
-    margin-left: 0;;
+    margin-left: 0;
     border-bottom: 2px solid #222B3A;
 }
 
 .selected_group_line {
     color: #323232;
-    font-weight: 700; /* bold */
+    font-weight: 700;/* bold */
 }
 
 .group1 {
     height: 99px;
     width: 1100px;
     display: flex;
-    align-items: center; /*center of verticaL */
-    justify-content: space-between; /* Tto borders right & left */
+    align-items: center;/*center of verticaL */
+    justify-content: space-between;/* Tto borders right & left */
 
     font-family: 'Proxima Nova';
     font-size: 18px;
     line-height: 22px;
     color: #222B3A;
-    font-weight: 700; /* bold */
+    font-weight: 700;/* bold */
 
-    margin-top: 9px; /* correction position of block*/
+    margin-top: 9px;/* correction position of block*/
 }
+
 .children_age {
     box-sizing: border-box;
 
     width: 227px;
-    height: 44px;    
+    height: 44px;
 
     border: 1.3px solid #FF8A00;
-    border-radius: 3px;    
+    border-radius: 3px;
     color: #FF8A00;
 
     display: flex;
-    align-items: center; /*center of verticaL */
-    justify-content: space-between; /*розтягнути по краям */
+    align-items: center;/*center of verticaL */
+    justify-content: space-between;/*розтягнути по краям */
 
     font-size: 14px;
-    font-weight: 700; /* bold */
+    font-weight: 700;/* bold */
     line-height: 27px;
      
-    padding: 0 20px 0 30px;    
+    padding: 0 20px 0 30px;
 }
 
 .back_for_select_gruop_menu {
     background: #FAFAFA;
 }
+
 .prostir.item {
-    flex-direction: column;    
+    flex-direction: column;
 }
+
 .items {
     margin-bottom: 19px;
     min-width: 100%;
@@ -306,12 +327,15 @@ a {
 
     font-family: 'Proxima Nova';
 }
+
 .items:first-child {
     margin-top: 26px;
 }
+
 .items:last-child {
     margin-bottom: 76px;
 }
+
 .item_number {
     width: 148px;
     height: 104px;
@@ -328,10 +352,12 @@ a {
 
     color: #E1E1E1;
 }
+
 .item_center {
     display: flex;
     flex-direction: column;
 }
+
 .item_title {
     font-family: 'Proxima Nova';
     font-size: 24px;
@@ -348,6 +374,7 @@ a {
     margin-top: 25px;
     margin-bottom: 5px;
 }
+
 .item_baby_age {    
     font-style: normal;
     font-weight: 700;
@@ -360,6 +387,7 @@ a {
 
     color: #979FAD;
 }
+
 .item_text {
     width: 799px;
     font-size: 16px;
@@ -369,6 +397,7 @@ a {
 
     color: #696969;
 }
+
 .available {
     font-style: normal;
     font-weight: 700;
@@ -379,9 +408,11 @@ a {
     color: #696969;
     margin-top: 5px;
 }
+
 .item_date {
     color: #FE8907;
 }
+
 .item_percent {
     margin-top: 30px;
     margin-left: 95px;
@@ -390,25 +421,77 @@ a {
 /* Бомбосховище */
 .zovnishna_obolonka.shelter {
     background-color: #0099DD;
-    height: 350px;    
-
+    height: 350px;
+    justify-content: start;
 }
+
 .basement {
     width: 1100px;
     display: flex;
-    flex-direction: row;   
-    justify-content: space-between 
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10rem;
 }
+
 .basement_block {
     display: flex;
     flex-direction: column;
+    width: 240px;
+
+    font-weight: 600;/* SemiBold (DemiBold) */
+    font-family: 'Proxima Nova';
+    color: #ffffff;
+    line-height: 19px;
+
+    margin-top: 37px;
+}
+
+.basement_block_title {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    margin-bottom: 12px;
+}
+
+.basement_block a {
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    line-height: 19px;
+
+    margin-bottom: 10px;
+}
+
+.basement_block a:nth-child(3) {
+    margin-top: 25px;
+}
+
+.basement_block a:hover {
+    color: #FE8907;
+}
+
+.tire2 {
+    width: 30px;
+    height: 0px;
+    border-bottom: 3px solid #ffffff;
+}
+
+.footer_social img {
+    width: 21px;
+    height: 21px;
+    margin-right: 15px;
 }
 
 
 
+
+/* фундамент */
 .zovnishna_obolonka.soil {
     background-color: #222B3A;
-    height: 47px;    
+    height: 47px;
 }
 
 .foundation {
@@ -419,8 +502,8 @@ a {
 /* Custom scrollbar */
 /* width */
 ::-webkit-scrollbar {
-    width: 0.7rem;
-    height: 0.7rem;
+    width: auto;
+    height: auto;
   }
   
   /* Track */
@@ -431,10 +514,10 @@ a {
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #696969; 
+    background: #696969;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #FE8907; 
+    background: #FE8907;
   }
